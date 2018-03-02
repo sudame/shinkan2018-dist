@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>coins新歓2018 | CAMP PAMPHLET</title>
+    <style>
+        #main-hero {
+            background: url(./images/bg.png) center center;
+            position: relative;
+        }
+
+        #main-hero::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .navbar-burger.right {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        ul>li {
+            margin: 1rem auto;
+        }
+
+        footer p{
+            color: #eee;
+            letter-spacing: 0.05rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="hero is-info is-fullheight is-bold" id="main-hero">
+            <div class="hero-head">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <h1 class="navbar-item title is-4 ">coins新歓2018</h1>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <h2 class="navbar-item title is-2">CAMP PAMPHLET</h2>
+                        </div>
+                    </div>
+                </nav>
+                <h2 class="navbar-item title is-2 is-hidden-desktop">CAMP PAMPHLET</h2>
+            </div>
+            <div class="hero-body">
+                <div class="container">
+                    <h3 class="title is-1 has-text-weight-light">新歓合宿とは</h3>
+                    <div class="has-text-weight-light is-size-5">
+                        <p>
+                            新歓合宿とはアレをアレしてアレするものです。
+                        </p>
+                        <p>
+                            みんなでアレをアレして、アレしましょう！
+                        </p>
+                        <p>
+                            大学というとアレなところだと思っている方も多いことでしょう。しかし、ここアレ大学では他大学と異なりアレです。
+                        </p>
+                        <p>
+                            アレをアレしないためにも、アレであるアレです！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3 class="title is-1 has-text-weight-light">日程</h3>
+                <div class="has-text-weight-light is-size-5">
+                    <p>ここに日程を書くよ！</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3 class="title is-1 has-text-weight-light">持ち物</h3>
+                <p class="has-text-weight-semibold is-size-5">
+                    以下のものは忘れず持ってきてください。
+                </p>
+                <c-belongings :items="[ '財布', '携帯電話', '寝巻き', '洗面用具', '汚れても良い服(BBQ時、臭いが付きます)', '汚れても良い靴', 'ゴミ袋', 'ハンカチ・ティッシュ', '虫よけ', '常備薬', '上履き' ]"></c-belongings>
+                <p class="has-text-weight-semibold is-size-5">
+                    以下のものは必要に応じて持ってきてください。
+                </p>
+                <c-belongings :items="[ 'ヘアアイロン', 'コンタクト', 'ハンガー', '酔い止め薬', 'トランプなど', '延長コード', 'メイクポーチ' ]"></c-belongings>
+                <p class="has-text-weight-semibold is-size-5">
+                    以下のものは施設に備え付けてあります。
+                </p>
+                <c-belongings :items="['ボディーソープ', 'シャンプー', 'ドライヤー' ]" :active=true></c-belongings>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3 class="title is-1 has-text-weight-light">注意事項</h3>
+                <div class="content has-text-weight-light is-size-5">
+                    <ul>
+                        <li>飲酒・喫煙は禁止です。</li>
+                        <li>貴重品は各自で管理してください。</li>
+                        <li>体調不良になった場合や怪我をした場合は早めに新歓委員または施設の人に申し出てください。</li>
+                        <li>ルールを守って設備を大切に使ってください。</li>
+                        <li>時間厳守で行動してください。</li>
+                        <li>BBQの臭いが付いたいり すす で汚れてしまったりすることが考えられるので、汚れても平気な服を用意することを検討してください。</li>
+                        <li>困ったことがあったら新歓委員に伝えてください。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered has-text-weight-light">
+                    <p>
+                        平成30年度<wbr>筑波大学情報科学類<wbr>新入生歓迎委員会
+                    </p>
+                    <p>
+                        All right reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
